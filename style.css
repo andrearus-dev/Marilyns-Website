@@ -53,12 +53,12 @@ h1 {
 .subtitle { 
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-    font-size: .9rem;
+    font-size: 1rem;
+    margin: 0 auto 1.5em;
 }
 
 
-.subtitle-programs {
-    font-size: 1rem;
+.subtitle-about {
     margin:0;
     padding: 0;
 }
@@ -360,13 +360,26 @@ h1 {
 
 .find-out-more {
     background: #FAFAFA;
-    padding: 2em 2em 3em 2em;
+    padding: 1.5em 0 3em;
+   
 }
 
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta:first-of-type {
+    margin-bottom: 1.2em;
+}
+
+
 .info-text {
+    font-size: 1.5em;
     font-weight: 500;
     text-transform: capitalize;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 /*================= */
@@ -375,11 +388,11 @@ h1 {
 
 .btn { 
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     background:#D05015;
     color: #fff;
     padding: .8em 1.5em;
-    min-width: 150px;
+    min-width: 200px;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 50px;
@@ -387,15 +400,25 @@ h1 {
     cursor: pointer;
     transition: 250ms;
     outline: none;
+    text-align: center;
 }
+
+.btn:hover,
+.btn:focus { 
+    opacity: .8;
+}
+
 .btn-programs {
-    padding-left: 3em;
-    padding-right: 3em; 
-    margin-left: 1.7em;
     color: #D05015;
     font-weight: 600;
     font-size: 1.1rem;
     text-transform: uppercase;
+}
+
+.programs-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3em;
 }
 
 
@@ -407,10 +430,7 @@ h1 {
 }
 
 
-.btn:hover,
-.btn:focus { 
-    opacity: .8;
-}
+
 
 
 #submit {
@@ -501,6 +521,20 @@ textarea {
 /*   MEDIA QUERY    */
 /*==================*/              
  
+@media (min-width: 580px) {
+    .hero,
+    .other-pages  {
+       height: 70vh;
+    }
+
+    .hero-info,
+    .other-pages-title {
+        padding: auto 1.5em;
+    }
+
+    
+
+}
 
 @media (min-width:900px) { 
 
@@ -521,7 +555,7 @@ textarea {
 
    .btn-programs { 
        padding: 0;
-       margin: 0 auto;
+       
    }
     
 
@@ -542,7 +576,7 @@ textarea {
       
     .header-content {
         display: block;
-        padding: 1.5em 0;
+        padding: 2em 0;
         background: #FAFAFA;
     }
     
@@ -620,14 +654,14 @@ textarea {
     
     
     .home-title { 
-    font-size: 8rem;
+    font-size: 7rem;
     }
     
     .subtitle { 
         font-size: 1.2rem;
     }
     
-    .subtitle-programs {
+    .subtitle-about {
         font-size: 1.5rem;
         text-align: center;
         margin:0;
@@ -653,15 +687,13 @@ textarea {
     
     .find-out-more {
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
     }
 
-    .programs-buttons {
-        display: flex;
-        justify-content: center;
+    .cta {
+        margin: 0 5em;
     }
-  
-    
+
     .col:last-child {
         grid-column: 3;
     }
