@@ -7,7 +7,7 @@
 
 * { 
     box-sizing: border-box;
-/*    border: 1px solid #f00 !important;*/
+   /* border: 1px solid #f00 !important; */
     
 }
 
@@ -392,7 +392,12 @@ h1 {
     padding-left: 3em;
     padding-right: 3em; 
     margin-left: 1.7em;
+    color: #D05015;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
+
 
 .btn-register {
    display: flex;
@@ -405,6 +410,15 @@ h1 {
 .btn:hover,
 .btn:focus { 
     opacity: .8;
+}
+
+
+#submit {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    margin: 1em auto 2em;
 }
 
 /*================= */
@@ -479,12 +493,6 @@ textarea {
     font-size: .8rem;
 }
 
-.btn-programs { 
-    color: #D05015;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
 
 
 
@@ -493,25 +501,6 @@ textarea {
 /*   MEDIA QUERY    */
 /*==================*/              
  
-/* 
- @media (min-height:810px) {
-
-        .hero {
-            height: 85vh;
-        } 
-
-        .other-pages {
-            height: 60vh;
-        }
-
-        .other-pages-title { 
-            padding-top: 1.7em;
-        }
-
-        .services-title { 
-            padding-top: 3em;
-        }
-    } */
 
 @media (min-width:900px) { 
 
@@ -757,10 +746,21 @@ textarea {
         font-size: 2.5em;
     }
     
+    #contact-section > *,
     #registration-section > * {
-        max-width: 515px;
+        max-width: 600px;
+        margin: 2em auto;
     }
 
+    .main-grid-contact { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-grid-contact > .column {
+        min-width: 250px;
+    }
  
+
 }
 
