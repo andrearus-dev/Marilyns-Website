@@ -519,12 +519,14 @@ textarea {
 
  /*===================*/
 /*   MEDIA QUERY    */
-/*==================*/              
+/*==================*/  
  
-@media (min-width: 580px) {
-    .hero,
-    .other-pages  {
-       height: 70vh;
+@media (min-width:700px) {
+    .hero {
+        height: 55vh;
+    }
+    .other-pages {
+       height: 40vh;
     }
 
     .hero-info,
@@ -532,7 +534,18 @@ textarea {
         padding: auto 1.5em;
     }
 
-    
+    .find-out-more {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .info-text {
+        font-size: 1.2rem;
+    }
+
+   .btn {
+    font-size: .9rem;
+}
 
 }
 
@@ -553,10 +566,14 @@ textarea {
     height: 140px;
    }
 
+
    .btn-programs { 
        padding: 0;
-       
    }
+
+   
+
+
     
 
     
