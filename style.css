@@ -31,11 +31,16 @@ img {
     height: auto;
 }
 
-.text {
+.pre-header {
     background-color: #F5F5F5;
     color: 0B2458;
     margin: 0;
+    display: grid;
+    justify-content: end;
+    display:inline-block;
 }
+
+
 
 
 /*================== */
@@ -479,6 +484,7 @@ h1 {
     margin: .3em 0 0 2em;
     white-space: nowrap;
     text-decoration: none;
+    color: #001E4E;
 }
 
 input,
