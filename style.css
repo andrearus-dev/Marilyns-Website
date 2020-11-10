@@ -31,14 +31,6 @@ img {
     height: auto;
 }
 
-.pre-header {
-    background-color: #F5F5F5;
-    color: 0B2458;
-    margin: 0;
-    display: grid;
-    justify-content: end;
-    display:inline-block;
-}
 
 
 
@@ -593,6 +585,14 @@ textarea {
 
    .btn-home { 
     font-size: 1rem;
+}
+
+
+.pre-header {
+    background-color: #F5F5F5;
+    color: 0B2458;
+    margin: 0;
+    
 }
 
   
