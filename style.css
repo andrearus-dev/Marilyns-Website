@@ -477,7 +477,8 @@ h1 {
 .contact-info,
 .contact-number { 
     margin: .3em 0 0 2em;
-    white-space: nowrap; 
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 input,
