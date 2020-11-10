@@ -587,13 +587,11 @@ textarea {
     font-size: 1rem;
 }
 
-
-.pre-header {
-    background-color: #F5F5F5;
-    color: 0B2458;
-    margin: 0;
-    
+.footer-text{
+    display: flex;
+    justify-content: space-around;
 }
+
 
   
     
