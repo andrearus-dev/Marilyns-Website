@@ -81,12 +81,19 @@
                 <p class="intro-text">Got a question? Send me a message... I'd love to hear from you!</p>
                 
                 <form  class="contact-form" action="sendform.php" method="POST" enctype="multipart/form-data">
+
                 <label name="name">Name</label>
-                    <input id="name" type="text" name="name" class="subject" required>
+                    <input id="name" type="text" class="subject" required>
+                    <small>Error message</small>
+
                 <label name="email">Email</label>
-                    <input id="email" type="email" name="email" class="email" required>
+                    <input id="email" type="text" class="email" required>
+                    <small>Error message</small>
+
                 <label name="message">Message</label>
-                    <textarea id="message" name="message" class="message" required></textarea>
+                    <textarea id="message" type="text" class="message" required></textarea>
+                    <small>Error message</small>
+
                 </form>
                 <div class="status">
                 </div>
@@ -100,12 +107,19 @@
                 All balances of course fees are due the first day of instruction unless other arrangements have been made.</p>
                 
                 <form class="contact-form"  action="sendform.php" method="POST" enctype="multipart/form-data"> 
+
                       <label name="name">Name</label>
-                        <input id="name" type="text" name="name" class="subject" required>
+                        <input id="name" type="text" class="subject" required>
+                        <small>Error message</small>
+
                       <label name="email">Email</label>
-                        <input id="email" type="email" name="email" class="email" required>
+                        <input id="email" type="text" class="email" required>
+                        <small>Error message</small>
+
                     <label name="message">Message</label>
-                        <textarea id="message" name="message" class="message"></textarea>
+                        <textarea id="message" type ="text" class="message"></textarea>
+                        <small>Error message</small>
+
                       </form>
                 <button type="submit" name="submit" id="submit" class="btn btn-send">Send</button>
         </div>
